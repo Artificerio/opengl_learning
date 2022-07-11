@@ -1,0 +1,1 @@
+-IC:/Libs/glfw/include/GLFW -IC:/Libs/glad/include -IC:/Libs/glfw/include -IC:/Libs/glm/glm/.. -IC:/Libs/stb/src
