@@ -177,7 +177,7 @@ int main()
   glBindBuffer(GL_ARRAY_BUFFER, VBO[1]);
   glBufferData(GL_ARRAY_BUFFER, sizeof(second_triangle), second_triangle, GL_STATIC_DRAW);
 
-  //vertex attribute configuration since (in aPos  is location = 0)
+  // vertex attribute configuration since (in aPos  is location = 0)
   glEnableVertexAttribArray(0);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 
@@ -186,6 +186,7 @@ int main()
   // glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
   
   //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
 
   while (!glfwWindowShouldClose(window)) 
   {
@@ -201,7 +202,14 @@ int main()
     glDrawArrays(GL_TRIANGLES, 0, 3);
 
     //draw second triangle
+
+    float timeValue = glfwGetTime();
+    float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
+    int vertexColorLocation = glGetUniformLocation(sh_prog_yellow, "ourColor");
+
     glUseProgram(sh_prog_yellow);
+    glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+
     glBindVertexArray(VAO[1]);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
@@ -213,6 +221,7 @@ int main()
     //Handle Events
     glfwPollEvents();
   }
+
   //Clean-up
   glfwDestroyWindow(window);
   glfwTerminate();
