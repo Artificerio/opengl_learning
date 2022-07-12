@@ -94,10 +94,35 @@ int main()
   glGetProgramiv(shaderProgramm, GL_LINK_STATUS, &succes);
   if (!succes) {
     glGetProgramInfoLog(shaderProgramm, 512, NULL, infoLog);
+  }
+
+
+  GLuint frag_sh_yellow = glCreateShader(GL_FRAGMENT_SHADER);
+  std::string frag_sh_yellow_src = loadShaderSrc("assets/fragmentShader2.glsl");
+  const GLchar* frag_sh_yellow_ptr = frag_sh_yellow_src.c_str();
+  glShaderSource(frag_sh_yellow, 1, &frag_sh_yellow_ptr, NULL);
+  glCompileShader(frag_sh_yellow);
+
+  glGetShaderiv(frag_sh_yellow,GL_COMPILE_STATUS, &succes);
+  if (!succes) {
+    glGetShaderInfoLog(frag_sh_yellow, 512, NULL, infoLog);
     std::cout << infoLog << std::endl;
   }
-  glDeleteShader(vertexShader);
+
+  GLuint sh_prog_yellow = glCreateProgram();
+  glAttachShader(sh_prog_yellow, vertexShader);
+  glAttachShader(sh_prog_yellow, frag_sh_yellow);
+  glLinkProgram(sh_prog_yellow);
+
+  glGetProgramiv(sh_prog_yellow, GL_LINK_STATUS, &succes);
+  if (!succes) {
+    glGetProgramInfoLog(sh_prog_yellow, 512, NULL, infoLog);
+  }
+
+  //clean-up
   glDeleteShader(fragmentShader);
+  glDeleteShader(vertexShader);
+  glDeleteShader(frag_sh_yellow);
 
   //vertices array
   float first_triangle[] = {
@@ -159,6 +184,8 @@ int main()
   //set up EBO
   // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
   // glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+  
+  //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
   while (!glfwWindowShouldClose(window)) 
   {
@@ -174,6 +201,7 @@ int main()
     glDrawArrays(GL_TRIANGLES, 0, 3);
 
     //draw second triangle
+    glUseProgram(sh_prog_yellow);
     glBindVertexArray(VAO[1]);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
@@ -185,10 +213,13 @@ int main()
     //Handle Events
     glfwPollEvents();
   }
-
   //Clean-up
   glfwDestroyWindow(window);
   glfwTerminate();
+  glDeleteVertexArrays(2, VAO);
+  glDeleteBuffers(2, VBO);
+  glDeleteProgram(shaderProgramm);
+  glDeleteProgram(sh_prog_yellow);
   return 0;
 }
 
