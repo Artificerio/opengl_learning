@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj.d"
   "CMakeFiles/test.dir/main.cpp.obj"
   "CMakeFiles/test.dir/main.cpp.obj.d"
+  "CMakeFiles/test.dir/src/Shader.cpp.obj"
+  "CMakeFiles/test.dir/src/Shader.cpp.obj.d"
   "libtest.dll.a"
   "test.exe"
   "test.exe.manifest"

@@ -16,6 +16,9 @@ add_executable(${PROJECT_NAME}
     main.cpp
     C:/Libs/glad/src/glad.c
     C:/Libs/stb/src/stb.cpp
+    
+    src/Shader.h
+    src/Shader.cpp
 )
 #target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_14)
 

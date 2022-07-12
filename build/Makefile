@@ -310,6 +310,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Shader.obj: src/Shader.cpp.obj
+.PHONY : src/Shader.obj
+
+# target to build an object file
+src/Shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/Shader.cpp.obj
+.PHONY : src/Shader.cpp.obj
+
+src/Shader.i: src/Shader.cpp.i
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -337,6 +361,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Shader.obj
+	@echo ... src/Shader.i
+	@echo ... src/Shader.s
 .PHONY : help
 
 

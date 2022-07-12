@@ -15,6 +15,11 @@
   "file": "C:/Libs/stb/src/stb.cpp"
 },
 {
+  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\Shader.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\src\\Shader.cpp",
+  "file": "C:/Users/mosek/code/cpp/opengl_template/src/Shader.cpp"
+},
+{
   "directory": "C:/Users/mosek/code/cpp/opengl_template/build/lib/glad",
   "command": "C:\\msys64\\mingw64\\bin\\cc.exe  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles\\glad.dir\\src\\glad.c.obj -c C:\\Libs\\glad\\src\\glad.c",
   "file": "C:/Libs/glad/src/glad.c"
