@@ -1,5 +1,5 @@
-CMakeFiles/test.dir/main.cpp.obj: \
- C:\Users\mosek\code\cpp\opengl_template\main.cpp \
+CMakeFiles/test.dir/src/main.cpp.obj: \
+ C:\Users\mosek\code\cpp\opengl_template\src\main.cpp \
  C:/msys64/mingw64/include/c++/12.1.0/cstddef \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -324,4 +324,4 @@ CMakeFiles/test.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/bits/fstream.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/sstream \
  C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc \
- C:\Users\mosek\code\cpp\opengl_template\src/Shader.h
+ C:\Users\mosek\code\cpp\opengl_template\src\Shader.h

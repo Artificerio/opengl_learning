@@ -1,11 +1,6 @@
 [
 {
   "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\main.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\main.cpp",
-  "file": "C:/Users/mosek/code/cpp/opengl_template/main.cpp"
-},
-{
-  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
   "command": "C:\\msys64\\mingw64\\bin\\cc.exe  @CMakeFiles/test.dir/includes_C.rsp -g -o CMakeFiles\\test.dir\\C_\\Libs\\glad\\src\\glad.c.obj -c C:\\Libs\\glad\\src\\glad.c",
   "file": "C:/Libs/glad/src/glad.c"
 },
@@ -13,6 +8,11 @@
   "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
   "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\C_\\Libs\\stb\\src\\stb.cpp.obj -c C:\\Libs\\stb\\src\\stb.cpp",
   "file": "C:/Libs/stb/src/stb.cpp"
+},
+{
+  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\main.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\src\\main.cpp",
+  "file": "C:/Users/mosek/code/cpp/opengl_template/src/main.cpp"
 },
 {
   "directory": "C:/Users/mosek/code/cpp/opengl_template/build",

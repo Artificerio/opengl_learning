@@ -1,3 +1,5 @@
+//TODO: implement more functions for the shader class[]
+
 #include "Shader.h"
 #include "glm/gtc/type_ptr.hpp"
 

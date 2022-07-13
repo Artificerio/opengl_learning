@@ -6,17 +6,17 @@ set(CMAKE_BUILD_TYPE "Debug")
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #find opengl package
 find_package(OpenGL REQUIRED)
 
 #source code
 add_executable(${PROJECT_NAME}
-    main.cpp
     C:/Libs/glad/src/glad.c
     C:/Libs/stb/src/stb.cpp
     
+    src/main.cpp
     src/Shader.h
     src/Shader.cpp
 )

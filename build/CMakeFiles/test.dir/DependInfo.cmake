@@ -10,8 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Libs/glad/src/glad.c" "CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj" "gcc" "CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj.d"
   "C:/Libs/stb/src/stb.cpp" "CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj" "gcc" "CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj.d"
-  "C:/Users/mosek/code/cpp/opengl_template/main.cpp" "CMakeFiles/test.dir/main.cpp.obj" "gcc" "CMakeFiles/test.dir/main.cpp.obj.d"
   "C:/Users/mosek/code/cpp/opengl_template/src/Shader.cpp" "CMakeFiles/test.dir/src/Shader.cpp.obj" "gcc" "CMakeFiles/test.dir/src/Shader.cpp.obj.d"
+  "C:/Users/mosek/code/cpp/opengl_template/src/main.cpp" "CMakeFiles/test.dir/src/main.cpp.obj" "gcc" "CMakeFiles/test.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

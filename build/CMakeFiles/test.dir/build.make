@@ -68,26 +68,11 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/main.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/main.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
-CMakeFiles/test.dir/main.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/main.cpp
-CMakeFiles/test.dir/main.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/main.cpp.obj -MF CMakeFiles\test.dir\main.cpp.obj.d -o CMakeFiles\test.dir\main.cpp.obj -c C:\Users\mosek\code\cpp\opengl_template\main.cpp
-
-CMakeFiles/test.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosek\code\cpp\opengl_template\main.cpp > CMakeFiles\test.dir\main.cpp.i
-
-CMakeFiles/test.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\main.cpp -o CMakeFiles\test.dir\main.cpp.s
-
 CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj: CMakeFiles/test.dir/includes_C.rsp
 CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj: C:/Libs/glad/src/glad.c
 CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj -MF CMakeFiles\test.dir\C_\Libs\glad\src\glad.c.obj.d -o CMakeFiles\test.dir\C_\Libs\glad\src\glad.c.obj -c C:\Libs\glad\src\glad.c
 
 CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.i: cmake_force
@@ -102,7 +87,7 @@ CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
 CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj: C:/Libs/stb/src/stb.cpp
 CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj -MF CMakeFiles\test.dir\C_\Libs\stb\src\stb.cpp.obj.d -o CMakeFiles\test.dir\C_\Libs\stb\src\stb.cpp.obj -c C:\Libs\stb\src\stb.cpp
 
 CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.i: cmake_force
@@ -112,6 +97,21 @@ CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.i: cmake_force
 CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Libs\stb\src\stb.cpp -o CMakeFiles\test.dir\C_\Libs\stb\src\stb.cpp.s
+
+CMakeFiles/test.dir/src/main.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/main.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/src/main.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/main.cpp
+CMakeFiles/test.dir/src/main.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/main.cpp.obj -MF CMakeFiles\test.dir\src\main.cpp.obj.d -o CMakeFiles\test.dir\src\main.cpp.obj -c C:\Users\mosek\code\cpp\opengl_template\src\main.cpp
+
+CMakeFiles/test.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/main.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosek\code\cpp\opengl_template\src\main.cpp > CMakeFiles\test.dir\src\main.cpp.i
+
+CMakeFiles/test.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\src\main.cpp -o CMakeFiles\test.dir\src\main.cpp.s
 
 CMakeFiles/test.dir/src/Shader.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Shader.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
@@ -130,17 +130,17 @@ CMakeFiles/test.dir/src/Shader.cpp.s: cmake_force
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/main.cpp.obj" \
 "CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj" \
 "CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj" \
+"CMakeFiles/test.dir/src/main.cpp.obj" \
 "CMakeFiles/test.dir/src/Shader.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.exe: CMakeFiles/test.dir/main.cpp.obj
 test.exe: CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj
 test.exe: CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj
+test.exe: CMakeFiles/test.dir/src/main.cpp.obj
 test.exe: CMakeFiles/test.dir/src/Shader.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: lib/glad/libglad.a

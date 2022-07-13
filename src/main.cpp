@@ -1,3 +1,5 @@
+//TODO: do excercises for chapter 6
+
 #include <cstddef>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -14,7 +16,8 @@
 #include <typeinfo>
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/trigonometric.hpp"
-#include "src/Shader.h"
+
+#include "Shader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
