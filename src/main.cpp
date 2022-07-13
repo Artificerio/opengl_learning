@@ -1,5 +1,4 @@
-//TODO: do excercises for chapter 6
-
+#include <cmath>
 #include <cstddef>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -117,6 +116,10 @@ int main()
   glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 
   glm::mat4 trans = glm::mat4(1.0f);
+
+  float change = 0.5f;
+  interpolate_sh.activate();
+  interpolate_sh.setFloat("h_offset", change);
 
   while (!glfwWindowShouldClose(window)) 
   {

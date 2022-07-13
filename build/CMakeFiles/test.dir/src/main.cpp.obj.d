@@ -1,25 +1,18 @@
 CMakeFiles/test.dir/src/main.cpp.obj: \
  C:\Users\mosek\code\cpp\opengl_template\src\main.cpp \
- C:/msys64/mingw64/include/c++/12.1.0/cstddef \
+ C:/msys64/mingw64/include/c++/12.1.0/cmath \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/mingw64/include/c++/12.1.0/pstl/pstl_config.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stddef.h \
- C:/msys64/mingw64/include/stddef.h C:/msys64/mingw64/include/crtdefs.h \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/cpp_type_traits.h \
+ C:/msys64/mingw64/include/c++/12.1.0/ext/type_traits.h \
+ C:/msys64/mingw64/include/math.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
  C:/msys64/mingw64/include/_mingw_mac.h \
  C:/msys64/mingw64/include/_mingw_secapi.h \
  C:/msys64/mingw64/include/vadefs.h \
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
- C:/Libs/glad/include/glad/glad.h C:/Libs/glad/include/KHR/khrplatform.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
- C:/msys64/mingw64/include/stdint.h C:/Libs/glfw/include/GLFW/glfw3.h \
- C:/msys64/mingw64/include/c++/12.1.0/math.h \
- C:/msys64/mingw64/include/c++/12.1.0/cmath \
- C:/msys64/mingw64/include/c++/12.1.0/bits/cpp_type_traits.h \
- C:/msys64/mingw64/include/c++/12.1.0/ext/type_traits.h \
- C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/std_abs.h \
  C:/msys64/mingw64/include/stdlib.h \
  C:/msys64/mingw64/include/corecrt_wstdlib.h \
@@ -59,6 +52,13 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/tr1/poly_laguerre.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/12.1.0/cstddef \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stddef.h \
+ C:/msys64/mingw64/include/stddef.h C:/Libs/glad/include/glad/glad.h \
+ C:/Libs/glad/include/KHR/khrplatform.h \
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
+ C:/msys64/mingw64/include/stdint.h C:/Libs/glfw/include/GLFW/glfw3.h \
+ C:/msys64/mingw64/include/c++/12.1.0/math.h \
  C:/msys64/mingw64/include/c++/12.1.0/iostream \
  C:/msys64/mingw64/include/c++/12.1.0/ostream \
  C:/msys64/mingw64/include/c++/12.1.0/ios \
