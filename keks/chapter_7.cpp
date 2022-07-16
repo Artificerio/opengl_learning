@@ -18,7 +18,7 @@
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/trigonometric.hpp"
 #include <stb_image.h>
-#include "Shader.h"
+#include "../src/Shader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -158,14 +158,8 @@ int main()
     interpolate_sh.setFloat("mixColor", mixValue);
 
     glBindVertexArray(VAO);
-    //trans = glm::rotate(trans, glm::radians((float)glfwGetTime() / 100.0f ), glm::vec3(0.0f, 0.0f, 1.0f));
-    //interpolate_sh.setMat4("transform", trans);
-    glm::mat4 transform = glm::mat4(1.0f);
-    //transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-    //transform = glm::translate(transform, glm::vec3(-0.5f, -0.5f, 0.0f));
-    float scale_amount =  static_cast<float>(glm::sin(glfwGetTime()));
-    transform = glm::scale(transform, glm::vec3(scale_amount,scale_amount,scale_amount));
-    interpolate_sh.setMat4("transform", transform);
+    trans = glm::rotate(trans, glm::radians((float)glfwGetTime() / 100.0f ), glm::vec3(0.0f, 1.0f, 1.0f));
+    interpolate_sh.setMat4("transform", trans);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
     //Swap the back with the front buffer
@@ -189,13 +183,13 @@ void processInput(GLFWwindow *window)
     glfwSetWindowShouldClose(window, true);
    //set opactity
   if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)  {
-    mixValue += 0.001f;
+    mixValue += 0.05f;
     if (mixValue >= 1.0f) {
       mixValue = 1.0f;
     } 
   }
   if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
-    mixValue -= 0.010f;
+    mixValue -= 0.05f;
     if (mixValue <= 0.0f) {
       mixValue = 0.0f;
     }

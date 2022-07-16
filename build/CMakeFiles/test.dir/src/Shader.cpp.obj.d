@@ -323,4 +323,5 @@ CMakeFiles/test.dir/src/Shader.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/bits/fstream.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/sstream \
  C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc \
- C:/msys64/mingw64/include/c++/12.1.0/iostream
+ C:/msys64/mingw64/include/c++/12.1.0/iostream \
+ C:/Libs/glfw/include/GLFW/glfw3.h

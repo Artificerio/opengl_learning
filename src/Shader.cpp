@@ -1,4 +1,5 @@
 #include "Shader.h"
+#include "GLFW/glfw3.h"
 #include "glm/gtc/type_ptr.hpp"
 
 Shader::Shader(const char* vertexShaderPath, const char* fragmentShaderPath ) {

@@ -692,7 +692,8 @@ CMakeFiles/test.dir/src/Shader.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/
   C:/msys64/mingw64/include/c++/12.1.0/bits/fstream.tcc \
   C:/msys64/mingw64/include/c++/12.1.0/sstream \
   C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc \
-  C:/msys64/mingw64/include/c++/12.1.0/iostream
+  C:/msys64/mingw64/include/c++/12.1.0/iostream \
+  C:/Libs/glfw/include/GLFW/glfw3.h
 
 CMakeFiles/test.dir/src/main.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/main.cpp \
   C:/msys64/mingw64/include/c++/12.1.0/cmath \
@@ -2218,6 +2219,6 @@ C:/msys64/mingw64/include/c++/12.1.0/sstream:
 
 C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc:
 
-C:/Users/mosek/code/cpp/opengl_template/src/main.cpp:
-
 C:/Libs/glfw/include/GLFW/glfw3.h:
+
+C:/Users/mosek/code/cpp/opengl_template/src/main.cpp:
