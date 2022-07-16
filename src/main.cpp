@@ -25,6 +25,7 @@ void processInput(GLFWwindow *window);
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
+float mixValue = 0.3f;
 
 int main()
 {
@@ -130,25 +131,31 @@ int main()
 
   while (!glfwWindowShouldClose(window)) 
   {
+    processInput(window);
+
     //Specify the color of the background
     glClearColor(0.071f, 0.071f, 0.07f, 1.0f);
     //Clean the back buffer and assign the new color to it
     glClear(GL_COLOR_BUFFER_BIT);
 
-    float timeValue = glfwGetTime();
-    float greenValue = (std::tan(sin(timeValue) / 2.0f) + 0.5f);
-    float redValue  = (cos(timeValue) / 1.5f) + 0.3f;
-    float blueValue  = ((sin(timeValue) / 2.0f) + 1.5f);
-    int vertexColorLocation = glGetUniformLocation(interpolate_sh.id, "time_color");
-    glUniform4f(vertexColorLocation, greenValue, redValue, blueValue, 1.0f);
+    //float timeValue = glfwGetTime();
+    //float greenValue = (std::tan(sin(timeValue) / 2.0f) + 0.5f);
+    //float redValue  = (cos(timeValue) / 1.5f) + 0.3f;
+    //float blueValue  = ((sin(timeValue) / 2.0f) + 1.5f);
+    //int vertexColorLocation = glGetUniformLocation(interpolate_sh.id, "time_color");
+    //glUniform4f(vertexColorLocation, greenValue, redValue, brreValue, 1.0f);
     
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2);
 
-    glBindVertexArray(VAO);
     interpolate_sh.activate();
+
+    //change opactity
+    interpolate_sh.setFloat("mixColor", mixValue);
+
+    glBindVertexArray(VAO);
     trans = glm::rotate(trans, glm::radians((float)glfwGetTime() / 100.0f ), glm::vec3(0.0f, 1.0f, 1.0f));
     interpolate_sh.setMat4("transform", trans);
     glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -172,8 +179,19 @@ void processInput(GLFWwindow *window)
 {
   if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
     glfwSetWindowShouldClose(window, true);
-  //set opactity
-  
+   //set opactity
+  if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)  {
+    mixValue += 0.05f;
+    if (mixValue >= 1.0f) {
+      mixValue = 1.0f;
+    } 
+  }
+  if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+    mixValue -= 0.05f;
+    if (mixValue <= 0.0f) {
+      mixValue = 0.0f;
+    }
+  }
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)

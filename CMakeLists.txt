@@ -31,9 +31,9 @@ add_subdirectory(C:/Libs/glm/glm lib/glm)
 #adding stb to the buld
 add_subdirectory(C:/Libs/stb lib/stb)
 
-target_include_directories(${PROJECT_NAME}
-    PUBLIC  C:/Libs/glfw/include/GLFW
-)
+#target_include_directories(${PROJECT_NAME}
+    #PUBLIC  C:/Libs/glfw/include/GLFW
+#)
 
 #linking add the libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE
