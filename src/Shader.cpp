@@ -16,10 +16,8 @@ Shader::Shader(const char* vertexShaderPath, const char* fragmentShaderPath ) {
   if (!succes) {
     glGetProgramInfoLog(id, 512, NULL, infoLog);
   }
-
   glDeleteShader(vertexShader);
   glDeleteShader(fragShader);
-
 };
 
 void Shader::activate() {
@@ -57,16 +55,14 @@ GLuint Shader::compileShader(const char *filepath, GLenum type) {
     glGetShaderInfoLog(ret, 512, NULL, infoLog);
     std::cout << infoLog << std::endl;
   }
-
   return ret;
 }
-
 
 void Shader::setMat4(const std::string &name, glm::mat4 val) {
   glUniformMatrix4fv(glGetUniformLocation(id, name.c_str()), 1, GL_FALSE, glm::value_ptr(val));
 }
 
-void Shader::setBool(const std::string &name, bool value) const{
+void Shader::setBool(const std::string &name, bool value) const {
   glUniform1i(glGetUniformLocation(id, name.c_str()), (int)value);
 }
 

@@ -8,9 +8,9 @@
 #include <sstream>
 #include <streambuf>   
 #include <string>
+#include <type_traits>
 #include <typeinfo>
 #include <iostream>
-
 
 
 class Shader {
@@ -26,7 +26,6 @@ class Shader {
     void setBool(const std::string &name, bool value) const;
     void setInt(const std::string &name, int value) const;
     void setFloat(const std::string &name, float value) const;
-
 
     //uniform function
     void setMat4(const std::string& name, glm::mat4 val);
@@ -55,5 +54,4 @@ class Shader {
       }
     }
 };
-
 #endif
