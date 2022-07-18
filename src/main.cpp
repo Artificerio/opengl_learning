@@ -63,16 +63,17 @@ int main()
   Shader interpolate_sh("assets/vertexShader.glsl", "assets/fragmentShader.glsl");
 
   //vertices array
-  float first_triangle[] = {
-    //positions3         //colors3        //textures2
-    0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.0f, 
-    0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
-    -0.5f, 0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f
+  float vertices[] = {
+    // positions          // colors           // texture coords
+    0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
+    0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f, // bottom right
+    -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
+    -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left 
   };
-
-  GLuint VAO, VBO;
-  glGenVertexArrays(1, &VAO);
-  glGenBuffers(1, &VBO);
+  unsigned int indices[] = {
+    0, 1, 3,
+    1, 2, 3
+  };
 
   unsigned int texture1, texture2;
   glGenTextures(1, &texture1);
@@ -108,24 +109,31 @@ int main()
   }
   stbi_image_free(data);
 
-  // first triangle
+  GLuint VAO, VBO, EBO;
+  glGenVertexArrays(1, &VAO);
+  glGenBuffers(1, &VBO);
+  glGenBuffers(1, &EBO);
+
   glBindVertexArray(VAO); 
+
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(first_triangle), first_triangle, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+  //ebo
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
   
-  //triangle1 coordinates attribute
-  glEnableVertexAttribArray(0);
+  //coordinates attribute
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+  glEnableVertexAttribArray(0);
 
-  //triangle1 color attributes
-  glEnableVertexAttribArray(1);
+  //color attributes
   glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+  glEnableVertexAttribArray(1);
 
-  //triangle1 texture attribute 
-  glEnableVertexAttribArray(2);
+  //texture attribute 
   glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-
-  glm::mat4 trans = glm::mat4(1.0f);
+  glEnableVertexAttribArray(2);
 
   interpolate_sh.activate();
   interpolate_sh.setInt("texture1", 0);
@@ -140,6 +148,13 @@ int main()
     //Clean the back buffer and assign the new color to it
     glClear(GL_COLOR_BUFFER_BIT);
 
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, texture1);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+
+    interpolate_sh.setFloat("mixColor", mixValue);
+    
     float timeValue = glfwGetTime();
     float greenValue = (std::tan(sin(timeValue) / 2.0f) + 0.5f);
     float redValue  = (cos(timeValue) / 1.5f) + 0.3f;
@@ -147,26 +162,18 @@ int main()
     int vertexColorLocation = glGetUniformLocation(interpolate_sh.id, "time_color");
     glUniform4f(vertexColorLocation, greenValue, redValue, blueValue, 1.0f);
     
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2);
 
-    interpolate_sh.activate();
-
-    //change opactity
-    interpolate_sh.setFloat("mixColor", mixValue);
-
-    glBindVertexArray(VAO);
-    //trans = glm::rotate(trans, glm::radians((float)glfwGetTime() / 100.0f ), glm::vec3(0.0f, 0.0f, 1.0f));
-    //interpolate_sh.setMat4("transform", trans);
     glm::mat4 transform = glm::mat4(1.0f);
-    //transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-    //transform = glm::translate(transform, glm::vec3(-0.5f, -0.5f, 0.0f));
+    transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+    transform = glm::translate(transform, glm::vec3(-0.5f, -0.5f, 0.0f));
     float scale_amount =  static_cast<float>(glm::sin(glfwGetTime()));
     transform = glm::scale(transform, glm::vec3(scale_amount,scale_amount,scale_amount));
     interpolate_sh.setMat4("transform", transform);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    //glDrawArrays(GL_TRIANGLES, 0, 3);
+
+    interpolate_sh.activate();
+    glBindVertexArray(VAO);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     
     //Swap the back with the front buffer
     glfwSwapBuffers(window);
@@ -189,7 +196,7 @@ void processInput(GLFWwindow *window)
     glfwSetWindowShouldClose(window, true);
    //set opactity
   if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)  {
-    mixValue += 0.001f;
+    mixValue += 0.010f;
     if (mixValue >= 1.0f) {
       mixValue = 1.0f;
     } 
