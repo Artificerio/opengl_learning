@@ -20,6 +20,21 @@
   "file": "C:/Users/mosek/code/cpp/opengl_template/src/Shader.cpp"
 },
 {
+  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\io\\Joystick.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\src\\io\\Joystick.cpp",
+  "file": "C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.cpp"
+},
+{
+  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\io\\Keyboard.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\src\\io\\Keyboard.cpp",
+  "file": "C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.cpp"
+},
+{
+  "directory": "C:/Users/mosek/code/cpp/opengl_template/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\io\\Mouse.cpp.obj -c C:\\Users\\mosek\\code\\cpp\\opengl_template\\src\\io\\Mouse.cpp",
+  "file": "C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.cpp"
+},
+{
   "directory": "C:/Users/mosek/code/cpp/opengl_template/build/lib/glad",
   "command": "C:\\msys64\\mingw64\\bin\\cc.exe  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles\\glad.dir\\src\\glad.c.obj -c C:\\Libs\\glad\\src\\glad.c",
   "file": "C:/Libs/glad/src/glad.c"

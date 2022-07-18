@@ -695,6 +695,57 @@ CMakeFiles/test.dir/src/Shader.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/
   C:/msys64/mingw64/include/c++/12.1.0/iostream \
   C:/Libs/glfw/include/GLFW/glfw3.h
 
+CMakeFiles/test.dir/src/io/Joystick.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.cpp \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.h \
+  C:/Libs/glad/include/glad/glad.h \
+  C:/Libs/glad/include/KHR/khrplatform.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
+  C:/msys64/mingw64/include/stdint.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stddef.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/Libs/glfw/include/GLFW/glfw3.h
+
+CMakeFiles/test.dir/src/io/Keyboard.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.cpp \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.h \
+  C:/Libs/glad/include/glad/glad.h \
+  C:/Libs/glad/include/KHR/khrplatform.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
+  C:/msys64/mingw64/include/stdint.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stddef.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/Libs/glfw/include/GLFW/glfw3.h
+
+CMakeFiles/test.dir/src/io/Mouse.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.cpp \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.h \
+  C:/Libs/glad/include/glad/glad.h \
+  C:/Libs/glad/include/KHR/khrplatform.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
+  C:/msys64/mingw64/include/stdint.h \
+  C:/msys64/mingw64/include/crtdefs.h \
+  C:/msys64/mingw64/include/corecrt.h \
+  C:/msys64/mingw64/include/_mingw.h \
+  C:/msys64/mingw64/include/_mingw_mac.h \
+  C:/msys64/mingw64/include/_mingw_secapi.h \
+  C:/msys64/mingw64/include/vadefs.h \
+  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stddef.h \
+  C:/msys64/mingw64/include/stddef.h \
+  C:/Libs/glfw/include/GLFW/glfw3.h
+
 CMakeFiles/test.dir/src/main.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/main.cpp \
   C:/msys64/mingw64/include/c++/12.1.0/cmath \
   C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -1054,7 +1105,10 @@ CMakeFiles/test.dir/src/main.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/sr
   C:/msys64/mingw64/include/c++/12.1.0/bits/fstream.tcc \
   C:/msys64/mingw64/include/c++/12.1.0/sstream \
   C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc \
-  C:/Users/mosek/code/cpp/opengl_template/src/Shader.h
+  C:/Users/mosek/code/cpp/opengl_template/src/Shader.h \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.h \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.h \
+  C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.h
 
 
 C:/msys64/mingw64/include/_mingw_secapi.h:
@@ -1082,6 +1136,8 @@ C:/msys64/mingw64/include/pshpack1.h:
 C:/msys64/mingw64/include/_mingw_stdarg.h:
 
 C:/msys64/mingw64/include/msxml.h:
+
+C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.h:
 
 C:/msys64/mingw64/include/windows.h:
 
@@ -1422,6 +1478,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/avx512vlbwintrin.h:
 C:/msys64/mingw64/include/c++/12.1.0/bits/exception.h:
 
 C:/Libs/glm/glm/ext/vector_bool2_precision.hpp:
+
+C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.cpp:
 
 C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++locale.h:
 
@@ -2049,6 +2107,8 @@ C:/Libs/glm/glm/ext/matrix_float4x3_precision.hpp:
 
 C:/Libs/glm/glm/detail/type_mat4x4.hpp:
 
+C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.cpp:
+
 C:/Libs/glm/glm/ext/matrix_double4x4_precision.hpp:
 
 C:/Libs/glm/glm/ext/matrix_float4x4.hpp:
@@ -2220,5 +2280,11 @@ C:/msys64/mingw64/include/c++/12.1.0/sstream:
 C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc:
 
 C:/Libs/glfw/include/GLFW/glfw3.h:
+
+C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.h:
+
+C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.cpp:
+
+C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.h:
 
 C:/Users/mosek/code/cpp/opengl_template/src/main.cpp:

@@ -2,6 +2,7 @@
 #include <cstddef>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <iterator>
 #include <math.h>
 #include <iostream>
 #include <glm/glm.hpp>
@@ -18,7 +19,11 @@
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/trigonometric.hpp"
 #include <stb_image.h>
+
 #include "Shader.h"
+#include "io/Keyboard.h"
+#include "io/Mouse.h"
+#include "io/Joystick.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -27,6 +32,7 @@ void processInput(GLFWwindow *window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 float mixValue = 0.3f;
+glm::mat4 mouseTransform = glm::mat4(1.0f);
 
 int main()
 {
@@ -51,6 +57,11 @@ int main()
 
   //register callback to resize window automatically
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+  glfwSetKeyCallback(window, Keyboard::keyCallBack);
+  glfwSetCursorPosCallback(window, Mouse::cursorPosCallBack);
+  glfwSetMouseButtonCallback(window, Mouse::mouseButtonCallBack);
+  glfwSetScrollCallback(window, Mouse::mouseWheelCallback);
 
   // glad: load all OpenGL function pointers
   // ---------------------------------------
@@ -156,24 +167,26 @@ int main()
     interpolate_sh.setFloat("mixColor", mixValue);
     
     float timeValue = glfwGetTime();
-    float greenValue = (std::tan(sin(timeValue) / 2.0f) + 0.5f);
-    float redValue  = (cos(timeValue) / 1.5f) + 0.3f;
-    float blueValue  = ((sin(timeValue) / 2.0f) + 1.5f);
+    float greenValue = (std::cos(sin(timeValue) / 3.0f) + 0.5f);
+    float redValue  = (cos(timeValue) / 3.5f) + 4.0f;
+    float blueValue  = ((sin(timeValue) / 3.0f) + 5.0f);
     int vertexColorLocation = glGetUniformLocation(interpolate_sh.id, "time_color");
     glUniform4f(vertexColorLocation, greenValue, redValue, blueValue, 1.0f);
-    
 
-    glm::mat4 transform = glm::mat4(1.0f);
-    transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-    transform = glm::translate(transform, glm::vec3(-0.5f, -0.5f, 0.0f));
-    float scale_amount =  static_cast<float>(glm::sin(glfwGetTime()));
-    transform = glm::scale(transform, glm::vec3(scale_amount,scale_amount,scale_amount));
-    interpolate_sh.setMat4("transform", transform);
-    //glDrawArrays(GL_TRIANGLES, 0, 3);
+    //glm::mat4 transform = glm::mat4(1.0f);
+    //transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+    //transform = glm::translate(transform, glm::vec3(-0.5f, -0.5f, 0.0f));
+    //float scale_amount =  static_cast<float>(glm::sin(glfwGetTime()));
+    //transform = glm::scale(transform, glm::vec3(scale_amount,scale_amount,scale_amount));
 
+    //interpolate_sh.setMat4("transform", transform);
+    interpolate_sh.setMat4("mouseTransform", mouseTransform);
+
+    //render container
     interpolate_sh.activate();
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    //glDrawArrays(GL_TRIANGLES, 0, 3);
     
     //Swap the back with the front buffer
     glfwSwapBuffers(window);
@@ -192,20 +205,35 @@ int main()
 
 void processInput(GLFWwindow *window)
 {
-  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+  if(Keyboard::key(GLFW_KEY_ESCAPE))  {
     glfwSetWindowShouldClose(window, true);
-   //set opactity
-  if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)  {
+  }
+
+  if (Keyboard::key(GLFW_KEY_UP))  {
     mixValue += 0.010f;
     if (mixValue >= 1.0f) {
       mixValue = 1.0f;
     } 
   }
-  if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+  if (Keyboard::key(GLFW_KEY_DOWN)) {
     mixValue -= 0.010f;
     if (mixValue <= 0.0f) {
       mixValue = 0.0f;
     }
+  }
+  
+  // move via keyboard
+  if (Keyboard::key(GLFW_KEY_W)) {
+    mouseTransform = glm::translate(mouseTransform, glm::vec3(0.0f, 0.1f, 0.0f));
+  }
+  if (Keyboard::key(GLFW_KEY_S)) {
+    mouseTransform = glm::translate(mouseTransform, glm::vec3(0.0f, -0.1f, 0.0f));
+  }
+  if (Keyboard::key(GLFW_KEY_A)) {
+    mouseTransform = glm::translate(mouseTransform, glm::vec3(-0.1f, 0.0f, 0.0f));
+  }
+  if (Keyboard::key(GLFW_KEY_D)) {
+    mouseTransform = glm::translate(mouseTransform, glm::vec3(0.1f, 0.0f, 0.0f));
   }
 }
 

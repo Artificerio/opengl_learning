@@ -8,10 +8,11 @@ out vec4 vPosColor;
 out vec2 TexCoord;
 
 uniform mat4 transform;
+uniform mat4 mouseTransform;
 //uniform float h_offset;
 
 void main() {
-  gl_Position = transform * vec4(aPos.x,-aPos.y,aPos.z, 1.0f);
+  gl_Position =  mouseTransform * vec4(aPos.x,-aPos.y,aPos.z, 1.0f);
   vPosColor = vec4(aPos, 1.0f);
   ourColor = aColor;
   TexCoord = aTexCoord;

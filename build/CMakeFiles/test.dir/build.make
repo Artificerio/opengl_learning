@@ -128,12 +128,60 @@ CMakeFiles/test.dir/src/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Shader.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\src\Shader.cpp -o CMakeFiles\test.dir\src\Shader.cpp.s
 
+CMakeFiles/test.dir/src/io/Joystick.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/io/Joystick.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/src/io/Joystick.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Joystick.cpp
+CMakeFiles/test.dir/src/io/Joystick.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/io/Joystick.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/io/Joystick.cpp.obj -MF CMakeFiles\test.dir\src\io\Joystick.cpp.obj.d -o CMakeFiles\test.dir\src\io\Joystick.cpp.obj -c C:\Users\mosek\code\cpp\opengl_template\src\io\Joystick.cpp
+
+CMakeFiles/test.dir/src/io/Joystick.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/io/Joystick.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosek\code\cpp\opengl_template\src\io\Joystick.cpp > CMakeFiles\test.dir\src\io\Joystick.cpp.i
+
+CMakeFiles/test.dir/src/io/Joystick.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/io/Joystick.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\src\io\Joystick.cpp -o CMakeFiles\test.dir\src\io\Joystick.cpp.s
+
+CMakeFiles/test.dir/src/io/Keyboard.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/io/Keyboard.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/src/io/Keyboard.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Keyboard.cpp
+CMakeFiles/test.dir/src/io/Keyboard.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/io/Keyboard.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/io/Keyboard.cpp.obj -MF CMakeFiles\test.dir\src\io\Keyboard.cpp.obj.d -o CMakeFiles\test.dir\src\io\Keyboard.cpp.obj -c C:\Users\mosek\code\cpp\opengl_template\src\io\Keyboard.cpp
+
+CMakeFiles/test.dir/src/io/Keyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/io/Keyboard.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosek\code\cpp\opengl_template\src\io\Keyboard.cpp > CMakeFiles\test.dir\src\io\Keyboard.cpp.i
+
+CMakeFiles/test.dir/src/io/Keyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/io/Keyboard.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\src\io\Keyboard.cpp -o CMakeFiles\test.dir\src\io\Keyboard.cpp.s
+
+CMakeFiles/test.dir/src/io/Mouse.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/io/Mouse.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/src/io/Mouse.cpp.obj: C:/Users/mosek/code/cpp/opengl_template/src/io/Mouse.cpp
+CMakeFiles/test.dir/src/io/Mouse.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/io/Mouse.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/io/Mouse.cpp.obj -MF CMakeFiles\test.dir\src\io\Mouse.cpp.obj.d -o CMakeFiles\test.dir\src\io\Mouse.cpp.obj -c C:\Users\mosek\code\cpp\opengl_template\src\io\Mouse.cpp
+
+CMakeFiles/test.dir/src/io/Mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/io/Mouse.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosek\code\cpp\opengl_template\src\io\Mouse.cpp > CMakeFiles\test.dir\src\io\Mouse.cpp.i
+
+CMakeFiles/test.dir/src/io/Mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/io/Mouse.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosek\code\cpp\opengl_template\src\io\Mouse.cpp -o CMakeFiles\test.dir\src\io\Mouse.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj" \
 "CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj" \
 "CMakeFiles/test.dir/src/main.cpp.obj" \
-"CMakeFiles/test.dir/src/Shader.cpp.obj"
+"CMakeFiles/test.dir/src/Shader.cpp.obj" \
+"CMakeFiles/test.dir/src/io/Joystick.cpp.obj" \
+"CMakeFiles/test.dir/src/io/Keyboard.cpp.obj" \
+"CMakeFiles/test.dir/src/io/Mouse.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -142,6 +190,9 @@ test.exe: CMakeFiles/test.dir/C_/Libs/glad/src/glad.c.obj
 test.exe: CMakeFiles/test.dir/C_/Libs/stb/src/stb.cpp.obj
 test.exe: CMakeFiles/test.dir/src/main.cpp.obj
 test.exe: CMakeFiles/test.dir/src/Shader.cpp.obj
+test.exe: CMakeFiles/test.dir/src/io/Joystick.cpp.obj
+test.exe: CMakeFiles/test.dir/src/io/Keyboard.cpp.obj
+test.exe: CMakeFiles/test.dir/src/io/Mouse.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: lib/glad/libglad.a
 test.exe: lib/glfw/src/libglfw3.a
@@ -149,7 +200,7 @@ test.exe: lib/stb/libstb.a
 test.exe: CMakeFiles/test.dir/linklibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp
 test.exe: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mosek\code\cpp\opengl_template\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

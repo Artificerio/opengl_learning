@@ -19,6 +19,13 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/Shader.h
     src/Shader.cpp
+
+    src/io/Joystick.cpp
+    src/io/Joystick.h
+    src/io/Keyboard.cpp
+    src/io/Keyboard.h
+    src/io/Mouse.cpp
+    src/io/Mouse.h
 )
 #target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_14)
 

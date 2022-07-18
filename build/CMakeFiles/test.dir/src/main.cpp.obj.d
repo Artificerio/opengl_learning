@@ -58,10 +58,7 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/Libs/glad/include/KHR/khrplatform.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.1.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h C:/Libs/glfw/include/GLFW/glfw3.h \
- C:/msys64/mingw64/include/c++/12.1.0/math.h \
- C:/msys64/mingw64/include/c++/12.1.0/iostream \
- C:/msys64/mingw64/include/c++/12.1.0/ostream \
- C:/msys64/mingw64/include/c++/12.1.0/ios \
+ C:/msys64/mingw64/include/c++/12.1.0/iterator \
  C:/msys64/mingw64/include/c++/12.1.0/iosfwd \
  C:/msys64/mingw64/include/c++/12.1.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/memoryfwd.h \
@@ -73,16 +70,9 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/_mingw_stat64.h \
  C:/msys64/mingw64/include/swprintf.inl \
  C:/msys64/mingw64/include/sec_api/wchar_s.h \
- C:/msys64/mingw64/include/c++/12.1.0/exception \
- C:/msys64/mingw64/include/c++/12.1.0/bits/exception.h \
- C:/msys64/mingw64/include/c++/12.1.0/bits/exception_ptr.h \
- C:/msys64/mingw64/include/c++/12.1.0/bits/cxxabi_init_exception.h \
- C:/msys64/mingw64/include/c++/12.1.0/typeinfo \
- C:/msys64/mingw64/include/c++/12.1.0/bits/hash_bytes.h \
- C:/msys64/mingw64/include/c++/12.1.0/new \
- C:/msys64/mingw64/include/c++/12.1.0/bits/nested_exception.h \
- C:/msys64/mingw64/include/c++/12.1.0/bits/char_traits.h \
- C:/msys64/mingw64/include/c++/12.1.0/cstdint \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/stream_iterator.h \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/streambuf_iterator.h \
+ C:/msys64/mingw64/include/c++/12.1.0/streambuf \
  C:/msys64/mingw64/include/c++/12.1.0/bits/localefwd.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/mingw64/include/c++/12.1.0/clocale \
@@ -109,9 +99,13 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/atomic_word.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/locale_classes.h \
  C:/msys64/mingw64/include/c++/12.1.0/string \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/char_traits.h \
+ C:/msys64/mingw64/include/c++/12.1.0/cstdint \
  C:/msys64/mingw64/include/c++/12.1.0/bits/allocator.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/new_allocator.h \
+ C:/msys64/mingw64/include/c++/12.1.0/new \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/exception.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/ostream_insert.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/cxxabi_forced.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/stl_function.h \
@@ -126,6 +120,7 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/bits/stl_construct.h \
  C:/msys64/mingw64/include/c++/12.1.0/string_view \
  C:/msys64/mingw64/include/c++/12.1.0/bits/functional_hash.h \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/hash_bytes.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/string_view.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/ext/string_conversions.h \
  C:/msys64/mingw64/include/c++/12.1.0/cstdlib \
@@ -137,14 +132,21 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/system_error \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/error_constants.h \
  C:/msys64/mingw64/include/c++/12.1.0/stdexcept \
- C:/msys64/mingw64/include/c++/12.1.0/streambuf \
+ C:/msys64/mingw64/include/c++/12.1.0/exception \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/exception_ptr.h \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/cxxabi_init_exception.h \
+ C:/msys64/mingw64/include/c++/12.1.0/typeinfo \
+ C:/msys64/mingw64/include/c++/12.1.0/bits/nested_exception.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/streambuf.tcc \
+ C:/msys64/mingw64/include/c++/12.1.0/math.h \
+ C:/msys64/mingw64/include/c++/12.1.0/iostream \
+ C:/msys64/mingw64/include/c++/12.1.0/ostream \
+ C:/msys64/mingw64/include/c++/12.1.0/ios \
  C:/msys64/mingw64/include/c++/12.1.0/bits/basic_ios.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/locale_facets.h \
  C:/msys64/mingw64/include/c++/12.1.0/cwctype \
  C:/msys64/mingw64/include/wctype.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/msys64/mingw64/include/c++/12.1.0/bits/streambuf_iterator.h \
  C:/msys64/mingw64/include/c++/12.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/mingw64/include/c++/12.1.0/bits/locale_facets.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/bits/basic_ios.tcc \
@@ -324,4 +326,7 @@ CMakeFiles/test.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.1.0/bits/fstream.tcc \
  C:/msys64/mingw64/include/c++/12.1.0/sstream \
  C:/msys64/mingw64/include/c++/12.1.0/bits/sstream.tcc \
- C:\Users\mosek\code\cpp\opengl_template\src\Shader.h
+ C:\Users\mosek\code\cpp\opengl_template\src\Shader.h \
+ C:\Users\mosek\code\cpp\opengl_template\src\io/Keyboard.h \
+ C:\Users\mosek\code\cpp\opengl_template\src\io/Mouse.h \
+ C:\Users\mosek\code\cpp\opengl_template\src\io/Joystick.h
